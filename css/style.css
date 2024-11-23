@@ -1,0 +1,13 @@
+body
+{
+    background-color: antiquewhite;
+    background-image: url('../images/trip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+}
+#two,#three
+{
+    display: none;
+}

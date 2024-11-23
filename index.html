@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripCalculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+     <div class="container-fluid">
+        <div class="row" id="one">
+            <div class="col-sm-4 p-5 my-5 bg-light mx-auto text-center rounded-3 shadow-lg">
+                <h4 >Trip Budget Calculator</h4>
+                <br/>
+                <input type="text" placeholder="Enter Destination" class="form-control" id="city">
+                <br/>
+                <input type="text" placeholder="Enter number of person" class="form-control" id="per">
+                <br/>
+                <button class="btn btn-danger btn-lg ms-auto" type="button" onclick="st()">Start</button>
+            </div>
+        </div>
+        <div class="row" id="two">
+            <div class="col-sm-4 p-5 my-5 bg-light mx-auto text-center rounded-3 shadow-lg">
+             <h4>Add Your Expense</h4>
+                <div class="d-flex me-1">
+             <input type="text" class="form-control" placeholder="Add Purpose" id="pur">
+             <input type="text" class="form-control" placeholder="Add Expense" id="exp">
+             </div>  
+             <br/>
+             <div class="d-flex justify-content-around">
+                <button class="btn btn-outline-warning" type="button" onclick="add()">Add</button>
+                <button class="btn btn-outline-success" type="button" onclick="sub()">Submit</button>
+            </div>
+            </div>
+            
+        </div>
+             <div class="row" id="three">
+                <div class="col-sm-4 p-5 my-5 bg-light mx-auto text-center rounded-3 shadow-lg">
+            <h4>Expense List</h4>
+           <table class="table table-light" id="listt">
+            <tr>
+                <th>Destination</th>
+                <td id="des"></td>
+            </tr>
+            <tr>
+                <th>No. Person</th>
+                <td id="person"></td>
+            </tr>
+            <tr>
+            <th>Purpose</th>
+            <th>Expense</th>
+        </tr>
+           </table>
+                </div>
+             </div>
+     </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
